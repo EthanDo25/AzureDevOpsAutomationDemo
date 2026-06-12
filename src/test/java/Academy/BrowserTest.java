@@ -22,7 +22,7 @@ public class BrowserTest {
 		System.out.println("Hello Guys");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+		options.addArguments("--headless", "--remote-allow-origins=*", "--no-sandbox", "--disable-dev-shm-usage");
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://demoazuredevops.azurewebsites.net/webapp/");
 		String text =driver.findElement(By.cssSelector("h1")).getText();
