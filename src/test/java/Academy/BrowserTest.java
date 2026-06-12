@@ -19,7 +19,7 @@ public class BrowserTest {
 	@Test
 	public void getData() throws InterruptedException
 	{
-		System.out.println("Hello Guys");
+		System.out.println("Hello Guys v2");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless", "--remote-allow-origins=*", "--no-sandbox", "--disable-dev-shm-usage");
